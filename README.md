@@ -6,10 +6,23 @@
 
 ## **Example of how to use the program**
 
-Say that you are a chemist who knows what the mass of their crude extract is and what concentration the alliquot must be at in the well plate. They also know how many fractions they want to calculate for. So, they would type this information as shown below:
+Say that a chemist knows what the mass of their crude extract is and what concentration the alliquot must be at in the well plate. They also know how many fractions they want to calculate for. So, they would type this information as shown below:
 
 ```
 How many fractions do you have? 2
 Enter the mass of your sample (in g): 2.3
 What concentration do you need to dilute your sample in? (mg/ml) 3
 
+
+```
+My program will print out the mass of the extract in milligrams as well as the amount of solvent needed for based on how many fractions the user has. An example of the results from the data used above is shown here-
+
+```
+--------------Here are the results using the provided information:--------------
+
+   Mass (mg)  Solvent Needed (ul)
+0     2300.0           766.666667
+1     2300.0           766.666667
+Type 'continue' to use this tool again 
+
+```
