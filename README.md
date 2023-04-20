@@ -6,4 +6,4 @@
 
 **Example of how to use the program**
 
-##Say that you are a chemist who 
+Say that you are a chemist who 
