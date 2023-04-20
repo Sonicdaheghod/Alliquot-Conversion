@@ -10,5 +10,5 @@ Say that you are a chemist who knows what the mass of their crude extract is and
 
 ```-------------- Alliquot Calculator --------------
     
-How many fractions do you have? ```
+How many fractions do you have? 
 
