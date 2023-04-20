@@ -1,7 +1,7 @@
 #Program to know how much solvent to put in fractions for tests (bioassay, LCMS, etc.)
 #This program is specific for my bioassay preperation for my fungal samples I am working on for my honors thesis research project on reisolating metabolites
 
-mport pandas as pd
+import pandas as pd
 while True:
     print("""-------------- Alliquot Calculator --------------
     """)
@@ -17,11 +17,11 @@ while True:
     sampleMass = []
     solventNeeded = []
 
-  
+
     for i in range(fractionNumber):
-        
+      
         #print mass in mg
-        sampleMassInput = input("Enter the mass of your sample (in g): ")
+        sampleMassInput = float(input("Enter the mass of your sample (in g): "))
 
        
         
