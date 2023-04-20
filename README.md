@@ -8,7 +8,7 @@
 
 Say that you are a chemist who knows what the mass of their crude extract is and what concentration the alliquot must be at in the well plate. They also know how many fractions they want to calculate for. So, they would type this information as shown below:
 
-`-------------- Alliquot Calculator --------------
+```-------------- Alliquot Calculator --------------
     
-How many fractions do you have? `
+How many fractions do you have? ```
 
