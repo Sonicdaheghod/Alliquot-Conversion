@@ -1,24 +1,43 @@
 #credit to https://python-course.eu/tkinter/entry-widgets-in-tkinter.php for help with input text boxes
 
-# #1 - bring in tKinter application window
 import tkinter as tk
 
+#1 - user entries
+userInputs = ("Mass of sample (mg)","Concentration of aliquot (mg/ml)")
 
-appWindow = tk.Tk()
-appWindow.title("Aliquot Calculator")
+#2- making boxes and functionality for user inputs
+def solventNeeded(enteries):
+    solvent = ((float(enteries["Mass of sample (mg)"].get()))/(float(enteries["Concentration of aliquot (mg/ml)"].get()))*1000)
+    print("Solvent needed (uL): ", solvent)
 
-#2 - Adding inputs for user
+ 
+def makeform(root, userInputs):
+    entries = {}
+    for field in userInputs:
+        print(field)
+        row = tk.Frame(root)
+        lab = tk.Label(row, width=35, text=field+": ", anchor='w')
+        ent = tk.Entry(row)
+        ent.insert(0, "0")
+        row.pack(side=tk.TOP, 
+                 fill=tk.X, 
+                 padx=15, 
+                 pady=15)
+        lab.pack(side=tk.LEFT)
+        ent.pack(side=tk.RIGHT, 
+                 expand=tk.YES, 
+                 fill=tk.X)
+        entries[field] = ent
+    return entries
 
-# ##labels for input
-tk.Label(appWindow, text="Mass of sample (mg)").grid(row=0)
-tk.Label(appWindow, text="Concentration needed (mg/uL)").grid(row=1)
+#3 - forming the tkinter application and output button
+if __name__ == '__main__':
+    root = tk.Tk()
+    root.title("Aliquot Calculator")
+    ents = makeform(root, userInputs)
+    b1 = tk.Button(root, text='Final Calculation',
+           command=(lambda e=ents: solventNeeded(e)))
+    b1.pack(side=tk.LEFT, padx=5, pady=5)
 
-e1 = tk.Entry(appWindow)
-e2 = tk.Entry(appWindow)
+    root.mainloop()
 
-##text box for inputs
-
-e1.grid(row=0, column=1)
-e2.grid(row=1, column=1)
-
-appWindow.mainloop()
