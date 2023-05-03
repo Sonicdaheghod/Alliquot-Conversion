@@ -1,5 +1,13 @@
 #credit to https://python-course.eu/tkinter/entry-widgets-in-tkinter.php for help with input text boxes
 
+#add progress bar
+from tqdm import tqdm
+##this encodes for how fast and what interval progress bar moves at
+import time
+for x in tqdm(range(10)):
+    time.sleep(1.5)
+# appWindow.mainloop()
+
 import tkinter as tk
 
 #user entries
