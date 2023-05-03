@@ -32,9 +32,9 @@ if __name__ == '__main__':
     appRoot = tk.Tk()
     appRoot.title("Aliquot Calculator")
     ents = makeform(appRoot, userInputs)
-    b1 = tk.Button(appRoot, text='Final Calculation',
+    button1 = tk.Button(appRoot, text='Final Calculation',
            command=(lambda e=ents: solventNeeded(e)))
-    b1.pack(side=tk.LEFT, padx=5, pady=5)
+    button1.pack(side=tk.LEFT, padx=5, pady=5)
 
     appRoot.mainloop()
 
