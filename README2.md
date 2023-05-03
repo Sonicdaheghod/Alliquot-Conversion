@@ -37,13 +37,17 @@ Afterwards, paste the code into the editor. Right click and press "Run Python Fi
 
 ## How to Use the Program
 
+1. Enter the mass of a sample of your choice in milligrams (mg) and the concentration of the aliquot needed for bioassay in milligrams over milliliters (mg/ml).
+<img width="306" alt="image" src="https://user-images.githubusercontent.com/68253811/236014595-e03ae727-8ed1-46d8-9fc6-b9aa7f8f2c55.png">
+
+2. Press the "calculate" button to receive the amount of solvent needed to make the desired concentration of the aliquot in microliters (uL).
+![aliquotcalculate](https://user-images.githubusercontent.com/68253811/236015470-e83b958f-1bc5-45fe-80c7-b9605ff17735.gif)
+
+3. The amount of solvent will show in the terminal:
+<img width="576" alt="aliquotfinal" src="https://user-images.githubusercontent.com/68253811/236015904-4bd8348f-fa10-4628-b593-bb5f6ded520a.png">
 
 ### Credits
 I referred to the links below to create my spreadsheet and the widgets:
 
 Thanks to python-course for providing the base code for setting up the vidual and functionality aspects of the input and output buttons.
 > https://python-course.eu/tkinter/entry-widgets-in-tkinter.php
-
-
-
-
